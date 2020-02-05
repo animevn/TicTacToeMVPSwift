@@ -39,7 +39,14 @@ struct Game:Codable{
     
     mutating func addMove(move:Move){
         moves.append(move)
+        currentMove += 1
     }
-
+    
+    //when users move back and forth with buttons, if they choose a new move
+    //then the game will continue from that move, and all moves that come following
+    //that move will be deleted.
+    mutating func deleteMovesAfterCurrentMove(){
+        moves = Array(moves[0..<currentMove])
+    }
 }
 
