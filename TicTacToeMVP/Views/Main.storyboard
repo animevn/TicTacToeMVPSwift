@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fxO-0b-Cub">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -10,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TicTacToe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TicTacToeMVP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -114,7 +115,7 @@
                                                             <color key="titleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="onButtonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1mC-4x-vbj"/>
+                                                            <action selector="onButtonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uaT-JM-lkZ"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -208,6 +209,7 @@ skip backward symbol
 Unicode: U+23EE, UTF-8: E2 8F AE</string>
                                                 </state>
                                                 <connections>
+                                                    <action selector="onButtonFirst:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1HL-nQ-c21"/>
                                                     <action selector="onButtonFirstPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i5c-gL-pw6"/>
                                                 </connections>
                                             </button>
@@ -220,6 +222,7 @@ left-pointing triangle
 Unicode: U+25C0 U+FE0F, UTF-8: E2 97 80 EF B8 8F</string>
                                                 </state>
                                                 <connections>
+                                                    <action selector="onButtonBack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iTd-vJ-5vI"/>
                                                     <action selector="onButtonBackPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EeR-3Q-AQB"/>
                                                 </connections>
                                             </button>
@@ -232,6 +235,7 @@ right-pointing triangle
 Unicode: U+25B6 U+FE0F, UTF-8: E2 96 B6 EF B8 8F</string>
                                                 </state>
                                                 <connections>
+                                                    <action selector="onButtonNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2or-ry-soj"/>
                                                     <action selector="onButtonNextPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x7L-pI-Xeh"/>
                                                 </connections>
                                             </button>
@@ -244,6 +248,7 @@ skip forward symbol
 Unicode: U+23ED, UTF-8: E2 8F AD</string>
                                                 </state>
                                                 <connections>
+                                                    <action selector="onButtonLast:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YoN-Kr-GD6"/>
                                                     <action selector="onButtonLastPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZEj-3s-omm"/>
                                                 </connections>
                                             </button>
