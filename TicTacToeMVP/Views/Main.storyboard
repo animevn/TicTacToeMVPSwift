@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fxO-0b-Cub">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wgz-QK-SFP">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -210,7 +210,6 @@ Unicode: U+23EE, UTF-8: E2 8F AE</string>
                                                 </state>
                                                 <connections>
                                                     <action selector="onButtonFirst:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1HL-nQ-c21"/>
-                                                    <action selector="onButtonFirstPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i5c-gL-pw6"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rl7-Fs-0g5">
@@ -223,7 +222,6 @@ Unicode: U+25C0 U+FE0F, UTF-8: E2 97 80 EF B8 8F</string>
                                                 </state>
                                                 <connections>
                                                     <action selector="onButtonBack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iTd-vJ-5vI"/>
-                                                    <action selector="onButtonBackPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EeR-3Q-AQB"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m3D-bZ-mU2">
@@ -236,7 +234,6 @@ Unicode: U+25B6 U+FE0F, UTF-8: E2 96 B6 EF B8 8F</string>
                                                 </state>
                                                 <connections>
                                                     <action selector="onButtonNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2or-ry-soj"/>
-                                                    <action selector="onButtonNextPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x7L-pI-Xeh"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IlP-7v-cZj">
@@ -249,7 +246,6 @@ Unicode: U+23ED, UTF-8: E2 8F AD</string>
                                                 </state>
                                                 <connections>
                                                     <action selector="onButtonLast:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YoN-Kr-GD6"/>
-                                                    <action selector="onButtonLastPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZEj-3s-omm"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -290,7 +286,7 @@ Unicode: U+23ED, UTF-8: E2 8F AD</string>
                         <barButtonItem key="rightBarButtonItem" title="New Game" id="cpb-Qg-vJI">
                             <color key="tintColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <action selector="onButtonNewGamePressed:" destination="BYZ-38-t0r" id="9NI-aD-tkO"/>
+                                <action selector="onButtonNewGamePressed:" destination="BYZ-38-t0r" id="EJh-0L-icM"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -301,25 +297,25 @@ Unicode: U+23ED, UTF-8: E2 8F AD</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1042.0289855072465" y="137.94642857142856"/>
+            <point key="canvasLocation" x="1860" y="134.48275862068968"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="f1y-92-8jA">
+        <scene sceneID="4vG-Fs-QyQ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fxO-0b-Cub" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wgz-QK-SFP" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mTa-k3-KnP">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Q58-a5-Qpp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="BOT-1K-L9r"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9AM-Hg-ekC"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0ss-Wj-KdL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nbZ-tA-oFt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+            <point key="canvasLocation" x="920.79999999999995" y="134.48275862068968"/>
         </scene>
     </scenes>
 </document>

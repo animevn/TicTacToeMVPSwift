@@ -73,7 +73,7 @@ class Board{
         currentPlayer = (currentPlayer == Player.X) ? Player.O : Player.X
     }
     
-    func makeOneMove(player:Player, row:Int, column:Int)->Player?{
+    func makeOneMove(row:Int, column:Int)->Player?{
         var player:Player? = nil
         if isCellValidForPlayed(row: row, column: column){
             game.deleteMovesAfterCurrentMove()
